@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CONCAT Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - CONCAT Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : CONCAT Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - CONCAT Function
 
 CONCAT function concatenates two or more strings.
 
@@ -32,7 +32,7 @@ Result: abc
 
 **Compatibility**: Oracle, IBM DB2, Teradata, Microsoft SQL Server, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [|| Operator]({{< ref "twopipes" >}})

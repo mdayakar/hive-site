@@ -1,11 +1,15 @@
 ---
-title: "Apache Hive : HPL/SQL Configuration File"
+title: "Apache Hive : HPL/SQL - Configurations"
 date: 2026-08-12
 ---
 
-# Apache Hive : HPL/SQL Configuration File
+# Apache Hive : HPL/SQL - Configurations
 
-HPL/SQL configuration is stored in *hplsql-site.xml* file. This file stores options in the following format:
+You can set all options dynamically using the [SET]({{< ref "assign" >}}) statement in a HPL/SQL script: `SET option=value;` 
+
+<!-- The below content is commented because these configuartions are not applicable now. Initially HPLSQL was provided as a stand alone command line tool which was supporting multiple databases including Hive. As a part of ([HIVE-24230](https://issues.apache.org/jira/browse/HIVE-24230)) HPL/SQL has been re-architected to an integrated part of HiveServer (HS2). So these configurations are not applicable now and this content is commented for history purpose as http://hplsql.org/doc site is not up where the contet is maintained. For the same purpose some pages are renamed to *.md.bak which are not applicable now but renamed for history purpose. Going forward those files and commented content will be removed. -->
+
+<!-- HPL/SQL configuration is stored in *hplsql-site.xml* file. This file stores options in the following format:
 
 ```
 <configuration>
@@ -239,11 +243,11 @@ Version: HPL/SQL 0.3.1
 
 ## hplsql.dual.table
 
-The *hplhql.dual.table* option defines a single row, single column table that HPL/SQL can use for internal operations. 
+The *hhplsql.dual.table* option defines a single row, single column table that HPL/SQL can use for internal operations. 
 
-Note that Hive allows you to execute SELECT statement without FROM clause since version 0.14 only. Using this option and Hive 0.13 and earlier, you can force HPL/SQL to automatically add FROM *hplhql.dual.table* to any SELECT statement that does not have FROM. 
+Note that Hive allows you to execute SELECT statement without FROM clause since version 0.14 only. Using this option and Hive 0.13 and earlier, you can force HPL/SQL to automatically add FROM *hhplsql.dual.table* to any SELECT statement that does not have FROM. 
 
-The default value is **default.dual** for HPL/SQL 0.3.13 and earlier, and empty since HPL/SQL 0.3.17. So now HPL/SQL does not add FROM *hplhql.dual.table*, by default.
+The default value is **default.dual** for HPL/SQL 0.3.13 and earlier, and empty since HPL/SQL 0.3.17. So now HPL/SQL does not add FROM *hhplsql.dual.table*, by default.
 
 Note that the table must exist in the database, HPL/SQL can only use an existing table. 
 
@@ -259,7 +263,8 @@ If *hplsql.insert.values* is set to **select** HPL/SQL transforms VALUES clause 
 
 The default value is **native**. For more information, see [INSERT Statement]({{< ref "insert" >}}).
 
-Version: HPL/SQL 0.3
+Version: HPL/SQL 0.3 -->
+
 ## hplsql.onerror
 
 The *hplsql.onerror* option defines how HPL/SQL handles errors. 
@@ -272,7 +277,7 @@ Values:
 
 For more information, see [Error Handling]({{< ref "error-handling" >}}).
 
-Version: HPL/SQL 0.1
+<!-- Version: HPL/SQL 0.1 -->
 
 ## hplsql.temp.tables
 
@@ -288,7 +293,7 @@ Note that Hive supports temporary tables since version 0.14 only.
 
 For more information, see [DECLARE TEMPORARY TABLE]({{< ref "declare-temporary-table" >}})
 
-Version: HPL/SQL 0.3
+<!-- Version: HPL/SQL 0.3 -->
 
 ## hplsql.temp.tables.schema
 
@@ -298,7 +303,7 @@ By the default, the current schema is used.
 
 For more information, see [DECLARE TEMPORARY TABLE]({{< ref "declare-temporary-table" >}})
 
-Version: HPL/SQL 0.3
+<!-- Version: HPL/SQL 0.3 -->
 
 ## hplsql.temp.tables.location
 
@@ -308,4 +313,4 @@ By the default, */tmp/hplsql* directory is used.
 
 For more information, see [DECLARE TEMPORARY TABLE]({{< ref "declare-temporary-table" >}})
 
-Version: HPL/SQL 0.3
+<!-- Version: HPL/SQL 0.3 -->

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : UPDATE Statement"
+title: "Apache Hive : HPL/SQL - UPDATE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : UPDATE Statement
+# Apache Hive : HPL/SQL - UPDATE Statement
 
 UPDATE statement allows you to update columns of existing rows in the specified table. 
 

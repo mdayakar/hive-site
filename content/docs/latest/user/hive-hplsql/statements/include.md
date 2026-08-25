@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : INCLUDE Statement"
+title: "Apache Hive : HPL/SQL - INCLUDE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : INCLUDE Statement
+# Apache Hive : HPL/SQL - INCLUDE Statement
 
 INCLUDE statement allows you to include statements from another HPL/SQL script.
 
@@ -47,7 +47,7 @@ Hello, world!
 
 **Compatibility:** HPL/SQL extension
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [CALL]({{< ref "call" >}})

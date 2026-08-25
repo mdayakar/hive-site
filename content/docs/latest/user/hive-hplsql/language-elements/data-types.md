@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Data Types"
+title: "Apache Hive : HPL/SQL - Data Types"
 date: 2026-08-12
 ---
 
-# Apache Hive : Data Types
+# Apache Hive : HPL/SQL - Data Types
 
 You can use the following data types in HPL/SQL programs:
 

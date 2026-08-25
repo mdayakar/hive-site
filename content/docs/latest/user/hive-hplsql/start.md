@@ -7,128 +7,79 @@ date: 2026-08-12
 
 Quick guide how to start using HPL/SQL.
 
-## Installation
+You can enable and use HPL/SQL from any host or third-party tool that can make a JDBC connection to HiveServer. Beeline is a popular client for use with HPL/SQL because other third-party tools do not show you some of the error messages about syntax mistakes.
 
-You can install HPL/SQL by [Apache Hive downloads](https://hive.apache.org/general/downloads/) .tar.gz or .zip file, or build it from the [Apache Hive downloads](https://hive.apache.org/general/downloads/).
-
-### Requirements
-
-- Java 1.6 or higher
-- Hadoop 1.x. and 2.x
-
-### Installing HPL/SQL from Binaries =
-
-**1. Download**
-
-[Apache Hive downloads](https://hive.apache.org/general/downloads/) a HPL/SQL release and uncompress to the preferred location, for example ~/hplsql/ directory. The HPL/SQL program directory includes the following files:
-
-- hplsql - Shell script to launch HPL/SQL on Linux
-- hplsql.cmd - Shell script to launch the tool on Windows
-- hplsql-x.x.x.jar - HPL/SQL executable (x.x.x contains the version)
-- hplsql-site.xml - HPL/SQL [configuration]({{< ref "configuration" >}}) file
-- antlr-runtime-4.5.jar - ANTLR parser runtime
-
-On Linux/UNIX make sure *hplsql* is an executable file (if you uncompress the tool from .zip file):
-
+## Enabling HPL/SQL in the beeline connection string
+After setting up a client to connect to HiveServer, you append ***mode=hplsql*** to the JDBC URL that connects the client to HiveServer.
 ```
-chmod +x <hplsql_dir>/hplsql
+beeline -u "jdbc:hive2://<HiveServer host>:10000/default;mode=hplsql"
+```
+When the client connects to HiveServer in this mode, HPL/SQL is enabled; otherwise, HPL/SQL is disabled.
+
+
+At the Hive prompt, you can run HPL/SQL. You can use the forward slash(/) to switch Beeline to multiline mode for typing multiple rows and evaluating them at once.
+```
+0: jdbc:hive2://localhost> CREATE PROCEDURE greet(name STRING)
+. . . . . . . . . . . . . . . . . . . . . . .> BEGIN
+. . . . . . . . . . . . . . . . . . . . . . .>   PRINT 'Welcome to ' || name;
+. . . . . . . . . . . . . . . . . . . . . . .> END;
+. . . . . . . . . . . . . . . . . . . . . . .> /
+No rows affected (0.084 seconds)
+0: jdbc:hive2://localhost> greet('Apache Hive HPLSQL');/
+INFO  : Welcome to Apache Hive HPLSQL
+No rows affected (0.01 seconds)
+0: jdbc:hive2://localhost>
 ```
 
-**2. Configure CLASSPATH** (Optional)
+You can use the existing beeline options like ***-e***, ***-f***. Below are the list of options that can be used in hplsql mode.
 
-For Cloudera distributions, you can edit *hplsql* file, remove all lines containing
+**Parameters:**
 
-```
-export "HADOOP_CLASSPATH=..."
-```
+| Parameter | Description |
+| --- | --- |
+| -e 'query' | SQL statements to execute |
+| -f file | Execute SQL statements from *file* |
+| -main procname | Entry point (procedure or function name) |
+| -d var=value | Variable definition |
+| --define var=value | Variable definition |
+| -hiveconf var=value | Variable definition |
+| -hivevar var=value | Variable definition |
 
-and add the following line
 
-```
-export "HADOOP_CLASSPATH=/opt/cloudera/parcels/CDH/jars/*"
-```
+**Notes**:
 
-For Hortonworks distributions check if Hadoop jars are located in /usr/hdp/x.x.x.x-x/ directory and change all paths in *hplsql* file accordingly.  
+- -e and -f cannot be specified together
+- if -main option is not specified, HPL/SQL start executing all statements from the beginning of the script
+- Currently -d, --define, -hivevar and -hiveconf are equivalent and allow you to define input variables.
 
-For other distributions check whether Hadoop jars are located in /usr/lib/, and make necessary changes in *hplsql* file. 
+**Example 1:**
 
-**3. Test installation**
-
-Run the following command to test HPL/SQL installation:
-
-```
-<hplsql_dir>/hplsql --version
-HPL/SQL x.x.x
-```
-
-Or when executed from the current directory:
+Executing HPL/SQL statements from a script:
 
 ```
-./hplsql --version
-HPL/SQL x.x.x
+beeline -u "jdbc:hive2://<HiveServer host>:10000/default;mode=hplsql" -f script.hplsql 
 ```
 
-If the version number is printed the tool is installed correctly.
+**Example 2:**
 
-**4. Add to PATH variable** (Optional)
-
-You may add HPL/SQL directory to PATH variable:
+Executing HPL/SQL statements from command line:
 
 ```
-export PATH=$PATH:<hplsql_dir>
+beeline -u "jdbc:hive2://<HiveServer host>:10000/default;mode=hplsql" -e "NVL(MAX_PARTITION_DATE(db.sales, local_dt, code='A'), CURRENT_DATE)" 
 ```
 
-Then you can invoke HPL/SQL by running:
+**Example 3:**
+
+Using variables:
 
 ```
-hplsql <options>
+beeline -u "jdbc:hive2://<HiveServer host>:10000/default;mode=hplsql" -e "PRINT a || ', ' || b" -d a=Hello -d b=world 
 ```
 
-## Configuration
-
-HPL/SQL uses [hplsql-site.xml]({{< ref "configuration" >}}) configuration file located in the HPL/SQL program directory where hplsql.jar is located. 
-
-To run Hive queries from HPL/SQL you may need to specify the YARN job queue, for example:
+Result:
 
 ```
-<property>
-  <name>hplsql.conn.init.hive2conn</name>
-  <value>
-     set mapred.job.queue.name=dev;
-     set hive.execution.engine=mr; 
-     use sales_db;
-  </value>
-</property>
+Hello, world
 ```
 
-Note that [hplsql-site.xml]({{< ref "configuration" >}}) located in the current directory takes precedence over the configuration file in HPL/SQL program directory.  
 
-### Running HPL/SQL =
-
-Now you can specify [options]({{< ref "cli" >}}) and run HPL/SQL, for example:
-
-```
-hplsql -e "CURRENT_DATE+1" 
-
-hplsql -e "SELECT * FROM src LIMIT 1" 
-```
-
-or
-
-```
-hplsql -f script.sql
-```
-
-## Use HPL/SQL in Shell Scripts
-
-Get a value from HPL/SQL script:
-
-```
-MDATE=$(hplsql -e "NVL(MIN_PARTITION_DATE(sales, local_dt, code='A'), '1970-01-01')")
-```
-
-```
-START=$(hplsql -e 'CURRENT_DATE - 1')
-```
-
-Read [HPL/SQL Reference]({{< ref "hive-hplsql" >}}) for more information how to use the tool.

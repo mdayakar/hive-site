@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CREATE PROCEDURE Statement"
+title: "Apache Hive : HPL/SQL - CREATE PROCEDURE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CREATE PROCEDURE Statement
+# Apache Hive : HPL/SQL - CREATE PROCEDURE Statement
 
 CREATE PROCEDURE statement allows you to create a user-defined SQL procedure (stored procedure).
 
@@ -45,7 +45,7 @@ Hello, world!
 
 **Compatibility:** Oracle, Teradata, IBM DB2, Microsoft SQL Server, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [User-Defined Functions and Stored Procedures]({{< ref "udf-sproc" >}})

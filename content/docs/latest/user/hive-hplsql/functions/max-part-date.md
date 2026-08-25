@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : MAX_PART_DATE Function - PL/HQL"
+title: "Apache Hive : HPL/SQL - MAX_PART_DATE Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : MAX_PART_DATE Function - PL/HQL
+# Apache Hive : HPL/SQL - MAX_PART_DATE Function
 
 MAX_PART_DATE function finds the maximum value for the specified partition column of type DATE.
 
@@ -39,8 +39,9 @@ DATE.
 
 Table *db.orders* is partitioned by *local_date* and has the following partitions:
 
-| local_date=2014-12-02 |
+| Partitions |
 | --- |
+| local_date=2014-12-02 |
 | local_date=2014-12-03 |
 | local_date=2014-12-04 |
 
@@ -56,8 +57,9 @@ Result: 2014-12-04
 
 Table *db.sales* is partitioned by *country* and *local_date* and has the following partitions:
 
-| country=US/local_date=2014-12-02 |
+| Partitions |
 | --- |
+| country=US/local_date=2014-12-02 |
 | country=US/local_date=2014-12-03 |
 | country=UK/local_date=2014-12-04 | 
 
@@ -69,9 +71,9 @@ MAX_PART_DATE(db.sales, local_date, country='US');
 
 Result: 2014-12-03
 
-**Compatibility**: PL/HQL extension.
+**Compatibility**: HPL/SQL extension.
 
-**Version:** PL/HQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->
 
 See also:
 

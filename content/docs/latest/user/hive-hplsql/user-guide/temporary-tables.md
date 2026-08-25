@@ -1,36 +1,36 @@
 ---
-title: "Apache Hive : Native and Managed Temporary Tables - PL/HQL"
+title: "Apache Hive : HPL/SQL - Native and Managed Temporary Tables"
 date: 2026-08-12
 ---
 
-# Apache Hive : Native and Managed Temporary Tables - PL/HQL
+# Apache Hive : HPL/SQL - Native and Managed Temporary Tables
 
-PL/HQL provides you with two options to work with temporary tables: native and managed. 
+HPL/SQL provides you with two options to work with temporary tables: native and managed. 
 
-Use the [plhql.temp.tables]({{< ref "configuration#plhqltemptables" >}}) option to define how to handle temporary tables, the default value is **native**.
+Use the [hplsql.temp.tables]({{< ref "configuration#hplsqltemptables" >}}) option to define how to handle temporary tables, the default value is **native**.
 
 ## Native Temporary Tables
 
-When native temporary tables are used PL/HQL relies on the underlying database to manage temporary tables. 
+When native temporary tables are used HPL/SQL relies on the underlying HiveServer to manage temporary tables. 
 
-PL/HQL converts DECLARE TEMPORARY TABLE statement to CREATE TEMPORARY TABLE in Hive. Note that Hive supports temporary tables since version 0.14 only.
+HPL/SQL converts DECLARE TEMPORARY TABLE statement to CREATE TEMPORARY TABLE in Hive.
 
 ## Managed Temporary Tables
 
-When [plhql.temp.tables]({{< ref "configuration#plhqltemptables" >}}) is set to **managed**, PL/HQL creates a regular table in the database and automatically drops it at the end of the session. 
+When [hplsql.temp.tables]({{< ref "configuration#hplsqltemptables" >}}) is set to **managed**, HPL/SQL creates a regular table in the HiveServer and automatically drops it at the end of the session. 
 
-Note that the schema name and location are defined by [plhql.temp.tables.schema]({{< ref "configuration#plhqltemptablesschema" >}}) and [plhql.temp.tables.location]({{< ref "configuration#plhqltemptableslocation" >}}) options, respectively.
+Note that the schema name and location are defined by [hplsql.temp.tables.schema]({{< ref "configuration#hplsqltemptablesschema" >}}) and [hplsql.temp.tables.location]({{< ref "configuration#hplsqltemptableslocation" >}}) options, respectively.
 
 Also UUID is added to the table name to prevent name conflicts between multiple sessions. 
 
-For example, if you declare temporary table *temp1*, PL/HQL will actually create something like *temp1_3fc162e0590f4e17ae141385cc0e8447*.
+For example, if you declare temporary table *temp1*, HPL/SQL will actually create something like *temp1_3fc162e0590f4e17ae141385cc0e8447*.
 
 **Example**:
 
 Create a managed temporary table and use it in other SQL statements:
 
 ```
-SET plhql.temp.tables = managed;
+SET hplsql.temp.tables = managed;
 
 DECLARE TEMPORARY TABLE temp1
 (
@@ -38,7 +38,7 @@ DECLARE TEMPORARY TABLE temp1
    c2 STRING
 );
 
-INSERT INTO temp1 SELECT 1, 'A' FROM dual;
+INSERT INTO temp1 SELECT 1, 'A';
 
 SELECT * FROM temp1;
 ```

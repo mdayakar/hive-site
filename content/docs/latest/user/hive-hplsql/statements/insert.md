@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : INSERT Statement"
+title: "Apache Hive : HPL/SQL - INSERT Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : INSERT Statement
+# Apache Hive : HPL/SQL - INSERT Statement
 
 INSERT statement inserts rows into a table.
 
@@ -66,4 +66,4 @@ You can specify the single row, single column dual table using [hplsql.dual.tabl
 
 **Compatibility:** Oracle, Microsoft SQL Server, IBM DB2, Teradata, PostgreSQL and MySQL
 
-**Version**: HPL/SQL 0.3
+<!-- **Version**: HPL/SQL 0.3 -->

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : INSERT DIRECTORY Statement"
+title: "Apache Hive : HPL/SQL - INSERT DIRECTORY Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : INSERT DIRECTORY Statement
+# Apache Hive : HPL/SQL - INSERT DIRECTORY Statement
 
 INSERT DIRECTORY statement allows you to write the query results to a local or HDFS-compatible file system.
 
@@ -36,7 +36,7 @@ insert overwrite directory '/data/sales_' || current_date
 
 **Compatibility:** Hive
 
-**Version**: HPL/SQL 0.3.17
+<!-- **Version**: HPL/SQL 0.3.17 -->
 
 See also:
 - [COPY]({{< ref "copy" >}})

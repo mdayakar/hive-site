@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CASE Expression - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - CASE Expression"
 date: 2026-08-12
 ---
 
-# Apache Hive : CASE Expression - PL/HQL Reference
+# Apache Hive : HPL/SQL - CASE Expression
 
 CASE expression allows you to implement IF-THEN-ELSE logic in expressions.
 
@@ -57,7 +57,7 @@ Searched CASE expression:
 
 **Compatibility:** Oracle, IBM DB2, SQL Server, Teradata, MySQL, PostgreSQL and Netezza.
 
-**Version**: PL/HQL 0.01
+<!-- **Version**: HPL/SQL 0.01 -->
 
 See also:
 - [DECODE Function]({{< ref "decode" >}})

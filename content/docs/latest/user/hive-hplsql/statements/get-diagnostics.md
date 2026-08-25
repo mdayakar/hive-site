@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : GET DIAGNOSTICS Statement - PL/HQL"
+title: "Apache Hive : HPL/SQL - GET DIAGNOSTICS Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : GET DIAGNOSTICS Statement - PL/HQL
+# Apache Hive : HPL/SQL - GET DIAGNOSTICS Statement
 
 GET DIAGNOSTICS statement allows you to retrieve the error message, the number of rows about the previous SQL statement.
 
@@ -27,7 +27,7 @@ GET DIAGNOSTICS var_name = ROW_COUNT;
 
 **Compatibility:** IBM DB2
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 **See also:**
 - [Error Handling]({{< ref "error-handling" >}})

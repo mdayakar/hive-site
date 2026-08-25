@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Hive HPL/SQL Reference"
+title: "Apache Hive : HPL/SQL Reference"
 date: 2026-08-12
 ---
 
-# Apache Hive : Hive HPL/SQL Reference
+# Apache Hive : HPL/SQL Reference
 
 Hive Hybrid Procedural SQL On Hadoop (HPL/SQL) is a tool that implements procedural SQL for Hive. It is available in Hive 2.0.0 ([HIVE-11055](https://issues.apache.org/jira/browse/HIVE-11055)).
 
@@ -15,19 +15,21 @@ HPL/SQL language is compatible to a large extent with Oracle PL/SQL, ANSI/ISO SQ
 
 HPL/SQL is an efficient way to implement ETL processes in Hadoop.
 
+Initially it was provided as a stand alone command line tool. As a part of ([HIVE-24230](https://issues.apache.org/jira/browse/HIVE-24230)) HPL/SQL has been re-architected to an integrated part of HiveServer (HS2). From a JDBC client, such as Beeline, you connect to HiveServer. The interpreter executes the abstract syntax tree (AST) from the parser. Hive metastore securely stores the function and procedure code permanently. The procedure is loaded and cached on demand to the interpreter's memory when needed. You can close the session or restart HiveServer without losing the definitions.
+
 ## Getting Started
 
 - [Why HPL/SQL]({{< ref "why" >}})
 - [Key Features]({{< ref "features" >}})
 - [Get Started]({{< ref "start" >}})
-- [What's New]({{< ref "new" >}})
+<!-- - [What's New]({{< ref "new" >}}) -->
 
 ## User Guide
 
-- [Command Line]({{< ref "cli" >}})
+<!-- - [Command Line]({{< ref "cli" >}}) -->
 - [Configuration]({{< ref "configuration" >}})
-- [Connections]({{< ref "connections" >}})
-- [Working with Multiple Databases]({{< ref "multiple-databases" >}})
+<!-- - [Connections]({{< ref "connections" >}}) -->
+<!-- - [Working with Multiple Databases]({{< ref "multiple-databases" >}}) -->
 - [User-Defined Functions and Stored Procedures]({{< ref "udf-sproc" >}})
 - [On-the-Fly SQL Conversion]({{< ref "conversion" >}})
 - [UDF to Run HPL/SQL Scripts from Hive Queries]({{< ref "udf" >}})
@@ -169,19 +171,16 @@ HPL/SQL is an efficient way to implement ETL processes in Hadoop.
 
 | Command | Description |
 | --- | --- |
-| [hive]({{< ref "hive" >}}) | Invoke Hive CLI |
 | [! cmd;]({{< ref "host" >}}) | Execute an OS command or run an external process |
 
 ## File I/O Operations
 
 - [UTL_FILE Package]({{< ref "utl-file" >}})
 
-## Troubleshooting
+<!-- ## Troubleshooting
 
-- [Troubleshooting]({{< ref "troubleshooting" >}})
+- [Troubleshooting]({{< ref "troubleshooting" >}}) -->
 
 ## Compatibility
 
 - [Oracle PL/SQL]({{< ref "plsql" >}})
-</content>
-</invoke>

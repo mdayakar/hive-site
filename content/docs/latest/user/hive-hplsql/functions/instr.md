@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : INSTR Function - PL/HQL"
+title: "Apache Hive : HPL/SQL - INSTR Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : INSTR Function - PL/HQL
+# Apache Hive : HPL/SQL - INSTR Function
 
 INSTR function returns the starting position of a substring within a string.
 
@@ -67,4 +67,4 @@ INSTR('abcabcabc', 'b', -3, 2)         -- Result 2
 
 **Compatibility**: Oracle, IBM DB2 and Teradata.
 
-**Version:** PL/HQL 0.3.11
+<!-- **Version:** HPL/SQL 0.3.11 -->

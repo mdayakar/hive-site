@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : EXIT WHEN Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - EXIT WHEN Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : EXIT WHEN Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - EXIT WHEN Statement
 
 EXIT WHEN statement exits the loop or block marked by the given label. If the label is not specified, EXIT leaves the innermost loop. 
 

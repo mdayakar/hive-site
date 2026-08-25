@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Addition Operator (+)"
+title: "Apache Hive : HPL/SQL - Addition Operator (+)"
 date: 2026-08-12
 ---
 
-# Apache Hive : Addition Operator (+)
+# Apache Hive : HPL/SQL - Addition Operator (+)
 
 You can use + arithmetic operator to add two numbers, concatenate two strings, or add an interval to a DATE value.
 
@@ -34,7 +34,7 @@ When you use + for string operand the result of the operation is the concatenate
 | 'Ab' + 'c' | 'Abc' | String |
 ## Add an Integer to Date
 
-When you add an integer to a DATE value, PL/HQL adds the number of days to the DATE and the result of the operation is a DATE value.
+When you add an integer to a DATE value, HPL/SQL adds the number of days to the DATE and the result of the operation is a DATE value.
 
 **Example:**
 

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SELECT INTO Statement"
+title: "Apache Hive : HPL/SQL - SELECT INTO Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : SELECT INTO Statement
+# Apache Hive : HPL/SQL - SELECT INTO Statement
 
 SELECT INTO statement allows you to assign values to variables using a SQL SELECT query. 
 
@@ -17,7 +17,7 @@ PRINT 'Users: ' || cnt;
 
 **Compatibility**: Oracle, IBM DB2, Teradata, PostgreSQL, MySQL and Netezza.
 
-**Version**: HPL/SQL 0.1
+<!-- **Version**: HPL/SQL 0.1 -->
 
 See also:
 - [SELECT]({{< ref "select" >}})

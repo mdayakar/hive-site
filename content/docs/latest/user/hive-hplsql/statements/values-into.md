@@ -1,11 +1,11 @@
 ---
-title: "Apache Hive : VALUES INTO Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - VALUES INTO Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : VALUES INTO Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - VALUES INTO Statement
 
-You can use the VALUES INTO statement to assign values to variables in PL/HQL. 
+You can use the VALUES INTO statement to assign values to variables in HPL/SQL. 
 
 If the variable was not explicitly declared before the assignment, a new variable is created and its data type is derived from the assignment expression.
 
@@ -26,7 +26,7 @@ VALUES (0, 100) INTO (count, limit);
 
 **Compatibility:** IBM DB2
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [SET Statement]({{< ref "assign" >}})

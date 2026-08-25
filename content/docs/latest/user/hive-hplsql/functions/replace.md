@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : REPLACE Function - HPL/SQL Reference"
+title: "Apache Hive : HPL/SQL - REPLACE Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : REPLACE Function - HPL/SQL Reference
+# Apache Hive : HPL/SQL - REPLACE Function
 
 REPLACE function replaces all occurrences of the specified substring with another substring. 
 
@@ -35,4 +35,4 @@ replace('2016-03-03', '-', '');
 
 **Compatibility**: Oracle, Microsoft SQL Server, IBM DB2 and MySQL.
 
-**Version**: HPL/SQL 0.3.17
+<!-- **Version**: HPL/SQL 0.3.17 -->

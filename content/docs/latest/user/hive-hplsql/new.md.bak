@@ -121,8 +121,8 @@ New HPL/SQL features:
 - [COPY]({{< ref "copy" >}}) statement
 - [COPY FROM LOCAL]({{< ref "copy-from-local" >}}) statement
 - [SET v = (SELECT c FROM ...)]({{< ref "assign#assignment-from-a-select-statement" >}}) assignment
-- [plhql.conn.db2conn]({{< ref "configuration#plhqlconndb2conn" >}}) option
-- [plhql.conn.tdconn]({{< ref "configuration#plhqlconntdconn" >}}) option
+- [hplsql.conn.db2conn]({{< ref "configuration#hplsqlconndb2conn" >}}) option
+- [hplsql.conn.tdconn]({{< ref "configuration#hplsqlconntdconn" >}}) option
 - DATE data type
 - TIMESTAMP data type
 - CURRENT_DATE, CURRENT DATE to TO_DATE(FROM_UNIXTIME(UNIX_TIMESTAMP())) conversion in executable SQL for Hive
@@ -151,7 +151,7 @@ New HPL/SQL features:
 - Windows-style file path parser (Bug fix)
 ## HPL/SQL 0.3.1 - April 30, 2015
 
-- [Hive UDF]({{< ref "udf" >}}) to run PL/HQL scripts from Hive CLI queries
+- [Hive UDF]({{< ref "udf" >}}) to run HPL/SQL scripts from Hive CLI queries
 - Automatically put functions referenced in Hive queries to Distributed Cache, register [UDF]({{< ref "udf" >}}) and modify SQL statements
 - [Multiple connections]({{< ref "connections" >}}) to different systems from a single script
 - [ACTIVITY_COUNT]({{< ref "activity_count" >}}) built-in variable
@@ -169,18 +169,18 @@ New HPL/SQL features:
 - [INCLUDE]({{< ref "include" >}}) statement
 - [MAP OBJECT]({{< ref "map-object" >}}) statement
 - [SIGNAL]({{< ref "signal" >}}) statement
-- [.plhqlrc]({{< ref "configuration##plhqlrc-file" >}}) configuration file
+- [.hplsqlrc]({{< ref "configuration##hplsqlrc-file" >}}) configuration file
 - [|| operator to CONCAT]({{< ref "twopipes" >}}) function conversion in SQL queries
 - Parser for column list in [INSERT]({{< ref "insert" >}}) statement
-- [plhql.conn.hiveconn]({{< ref "configuration#plhqlconnhiveconn" >}}) option
-- [plhql.conn.init.hiveconn]({{< ref "configuration#plhqlconninithiveconn" >}}) option
-- [plhql.conn.convert.hiveconn]({{< ref "configuration#plhqlconnconverthiveconn" >}}) option
-- [plhql.conn.hive2conn]({{< ref "configuration#plhqlconnhive2conn" >}}) option
-- [plhql.conn.init.hive2conn]({{< ref "configuration#plhqlconninithive2conn" >}}) option
-- [plhql.conn.convert.hive2conn]({{< ref "configuration#plhqlconnconverthive2conn" >}}) option
-- [plhql.conn.<connection_profile>]({{< ref "configuration#plhqlconn-connection_profile" >}}) option
-- [plhql.conn.init.<connection_profile>]({{< ref "configuration#plhqlconninit-connection_profile" >}}) option
-- [plhql.conn.mysqlconn]({{< ref "configuration#plhqlconnmysqlconn" >}}) option
+- [hplsql.conn.hiveconn]({{< ref "configuration#hplsqlconnhiveconn" >}}) option
+- [hplsql.conn.init.hiveconn]({{< ref "configuration#hplsqlconninithiveconn" >}}) option
+- [hplsql.conn.convert.hiveconn]({{< ref "configuration#hplsqlconnconverthiveconn" >}}) option
+- [hplsql.conn.hive2conn]({{< ref "configuration#hplsqlconnhive2conn" >}}) option
+- [hplsql.conn.init.hive2conn]({{< ref "configuration#hplsqlconninithive2conn" >}}) option
+- [hplsql.conn.convert.hive2conn]({{< ref "configuration#hplsqlconnconverthive2conn" >}}) option
+- [hplsql.conn.<connection_profile>]({{< ref "configuration#hplsqlconn-connection_profile" >}}) option
+- [hplsql.conn.init.<connection_profile>]({{< ref "configuration#hplsqlconninit-connection_profile" >}}) option
+- [hplsql.conn.mysqlconn]({{< ref "configuration#hplsqlconnmysqlconn" >}}) option
 - [SET]({{< ref "assign" >}}) statement - assigning NULL to a variable (Bug fix)
 - Boolean expressions and predicates (Bug fix)
 ## HPL/SQL 0.3 - March 31, 2015
@@ -209,12 +209,12 @@ New HPL/SQL features:
 - [GET DIAGNOSTICS EXCEPTION]({{< ref "get-diagnostics" >}}) statement
 - [RESIGNAL]({{< ref "resignal" >}}) statement   
 - [VALUES INTO]({{< ref "values-into" >}}) statement
-- [plhql.conn.convert.default]({{< ref "configuration#plhqlconnconvertdefault" >}}) option
-- [plhql.dual.table]({{< ref "configuration#plhqldualtable" >}}) option
-- [plhql.insert.values]({{< ref "configuration#plhqlinsertvalues" >}}) option
-- [plhql.temp.tables]({{< ref "configuration#plhqltemptables" >}}) option
-- [plhql.temp.tables.schema]({{< ref "configuration#plhqltemptablesschema" >}}) option
-- [plhql.temp.tables.location]({{< ref "configuration#plhqltemptableslocation" >}}) option
+- [hplsql.conn.convert.default]({{< ref "configuration#hplsqlconnconvertdefault" >}}) option
+- [hplsql.dual.table]({{< ref "configuration#hplsqldualtable" >}}) option
+- [hplsql.insert.values]({{< ref "configuration#hplsqlinsertvalues" >}}) option
+- [hplsql.temp.tables]({{< ref "configuration#hplsqltemptables" >}}) option
+- [hplsql.temp.tables.schema]({{< ref "configuration#hplsqltemptablesschema" >}}) option
+- [hplsql.temp.tables.location]({{< ref "configuration#hplsqltemptableslocation" >}}) option
 - [VARCHAR2 to STRING]({{< ref "data-types#data-type-conversion" >}}) conversion in CREATE TABLE
 - [NUMBER to DECIMAL]({{< ref "data-types#data-type-conversion" >}}) conversion in CREATE TABLE
 ## HPL/SQL 0.1 - February 27, 2015

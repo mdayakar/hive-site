@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SUBSTR Function - HPL/SQL Reference"
+title: "Apache Hive : HPL/SQL - SUBSTR Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : SUBSTR Function - HPL/SQL Reference
+# Apache Hive : HPL/SQL - SUBSTR Function
 
 SUBSTR function returns a substring from string. 
 
@@ -51,4 +51,4 @@ Result: 'mar'
 **See also**:
 - [SUBSTRING]({{< ref "substring" >}})
 
-**Version**: HPL/SQL 0.1
+<!-- **Version**: HPL/SQL 0.1 -->

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Cursor Attributes"
+title: "Apache Hive : HPL/SQL - Cursor Attributes"
 date: 2026-08-12
 ---
 
-# Apache Hive : Cursor Attributes
+# Apache Hive : HPL/SQL - Cursor Attributes
 
 Cursor attributes allow you to get information about the current cursor state.
 
@@ -61,7 +61,7 @@ END;
 
 **Compatibility:** Oracle
 
-**Version:** HPL/SQL 0.3.11
+<!-- **Version:** HPL/SQL 0.3.11 -->
 
 **See also:**
 - [OPEN]({{< ref "open" >}})

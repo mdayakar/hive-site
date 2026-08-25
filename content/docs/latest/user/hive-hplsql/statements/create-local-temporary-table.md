@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CREATE LOCAL TEMPORARY TABLE - PL/HQL"
+title: "Apache Hive : HPL/SQL - CREATE LOCAL TEMPORARY TABLE"
 date: 2026-08-12
 ---
 
-# Apache Hive : CREATE LOCAL TEMPORARY TABLE - PL/HQL
+# Apache Hive : HPL/SQL - CREATE LOCAL TEMPORARY TABLE
 
 CREATE LOCAL TEMPORARY TABLE statement allows you to create a temporary table for the current session.
 
@@ -21,14 +21,14 @@ CREATE LOCAL TEMPORARY TABLE table_name
 Notes:
 - The local temporary table is automatically dropped at the end of session.
 
-For more details how temporary table support is implemented in PL/HQL, see [Native and Managed Temporary Tables]({{< ref "temporary-tables" >}}).
+For more details how temporary table support is implemented in HPL/SQL, see [Native and Managed Temporary Tables]({{< ref "temporary-tables" >}}).
 
 **Example**:
 
 Create a managed temporary table and use it in other SQL statements:
 
 ```
-SET plhql.temp.tables = managed;
+SET hplsql.temp.tables = managed;
 
 CREATE LOCAL TEMPORARY TABLE temp1
 (
@@ -43,7 +43,7 @@ SELECT * FROM temp1;
 
 **Compatibility:** ANSI SQL
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [Native and Managed Temporary Tables]({{< ref "temporary-tables" >}})

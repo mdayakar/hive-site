@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : COPY Statement"
+title: "Apache Hive : HPL/SQL - COPY Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : COPY Statement
+# Apache Hive : HPL/SQL - COPY Statement
 
 COPY statement allows to transfer data between tables and files. Use it to transfer relatively small volumes of data i.e. query results, look-up and dimension tables.
 
@@ -68,7 +68,7 @@ COPY sales.users TO sales.users2 AT tdconn;
 
 **Compatibility:** HPL/SQL Extension, PostgreSQL
 
-**Version:** HPL/SQL 0.3.7
+<!-- **Version:** HPL/SQL 0.3.7 -->
 
 See also:
 - [COPY FROM LOCAL]({{< ref "copy-from-local" >}})

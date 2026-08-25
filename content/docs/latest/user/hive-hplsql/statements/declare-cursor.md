@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DECLARE CURSOR Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - DECLARE CURSOR Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : DECLARE CURSOR Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - DECLARE CURSOR Statement
 
 You can use DECLARE CURSOR statement to declare a cursor using a dynamic SQL.
 
@@ -59,7 +59,7 @@ CLOSE cur;
 
 **Compatibility:** IBM DB2, MySQL, Teradata.
 
-**Version:** PL/HQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->
 
 **See also:**
 - [OPEN]({{< ref "open" >}})

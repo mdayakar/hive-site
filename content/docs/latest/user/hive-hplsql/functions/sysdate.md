@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SYSDATE Function"
+title: "Apache Hive : HPL/SQL - SYSDATE Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : SYSDATE Function
+# Apache Hive : HPL/SQL - SYSDATE Function
 
 SYSDATE function returns the current date and time (year, month, day, hour, minute and seconds).
 
@@ -29,7 +29,7 @@ SYSDATE
 
 **Compatibility**: Oracle
 
-**Version:** HPL/SQL 0.3
+<!-- **Version:** HPL/SQL 0.3 -->
 
 See also:
 

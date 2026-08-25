@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : UPPER Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - UPPER Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : UPPER Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - UPPER Function
 
 UPPER function converts a string expression to upper case.
 
@@ -29,4 +29,4 @@ ABC
 
 **Compatibility**: Oracle, Microsoft SQL Server, IBM DB2, Teradata, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->

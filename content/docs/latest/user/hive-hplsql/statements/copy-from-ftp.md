@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : COPY FROM FTP Statement"
+title: "Apache Hive : HPL/SQL - COPY FROM FTP Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : COPY FROM FTP Statement
+# Apache Hive : HPL/SQL - COPY FROM FTP Statement
 
 COPY FROM FTP statement allows to copy files from a FTP server to local or any Hadoop compatible file system. Using this statement you can easily copy FTP subdirectories into HDFS i.e.
 

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CLOSE Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - CLOSE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CLOSE Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - CLOSE Statement
 
 CLOSE statement closes a cursor.
 

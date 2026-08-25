@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Declarations - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - Declarations"
 date: 2026-08-12
 ---
 
-# Apache Hive : Declarations - PL/HQL Reference
+# Apache Hive : HPL/SQL - Declarations
 
 You can declare variables using DECLARE block or statement. 
 

@@ -1,11 +1,11 @@
 ---
-title: "Apache Hive : On-the-Fly SQL Conversion in Hive"
+title: "Apache Hive : HPL/SQL - On-the-Fly SQL Conversion in Hive"
 date: 2026-08-12
 ---
 
-# Apache Hive : On-the-Fly SQL Conversion in Hive
+# Apache Hive : HPL/SQL - On-the-Fly SQL Conversion in Hive
 
-HPL/SQL supports many procedural dialects that allows you to reuse your existing code without changes. But not all statements are executed by HPL/SQL, some of them must be executed by the database.
+HPL/SQL supports many procedural dialects that allows you to reuse your existing code without changes. But not all statements are executed by HPL/SQL, some of them must be executed by the HiveServer.
 
 Consider the following example:
 
@@ -21,9 +21,9 @@ IF code = 'A' THEN
 END IF;
 ```
 
-In this example, IF statement is executed by PL/HQL itself. It checks the value of *code* variable and if it is equal to 'A', HPL/SQL executes the CREATE TABLE statement.
+In this example, IF statement is executed by HPL/SQL itself. It checks the value of *code* variable and if it is equal to 'A', HPL/SQL executes the CREATE TABLE statement.
 
-HPL/SQL cannot execute CREATE TABLE, this statement must be sent to the database to create a physical persistent table accessible to other sessions.
+HPL/SQL cannot execute CREATE TABLE, this statement must be sent to the HiveServer to create a physical persistent table accessible to other sessions.
 
 But you can see that the syntax of CREATE TABLE does not conform to Hive, it uses NUMBER and VARCHAR2 data types as well as a constraint.
 
@@ -38,7 +38,7 @@ CREATE TABLE dept
 );
 ```
 
-On-the-fly conversion is enabled by default and set using [hplsql.conn.convert.default]({{< ref "configuration#hplsqlconnconvertdefault" >}}) option.
+<!-- On-the-fly conversion is enabled by default and set using [hplsql.conn.convert.default]({{< ref "configuration#hplsqlconnconvertdefault" >}}) option. -->
 
 ## Data Types
 
@@ -79,7 +79,6 @@ Conversions of SQL SELECT statements:
 | Source | Description | Hive SQL |
 | --- | --- | --- |
 | SELECT TOP n ... FROM ... | Row limit | SELECT ... FROM ... LIMIT n |
-| SELECT without FROM | | FROM [hplsql.dual.table]({{< ref "configuration#hplsqldualtable" >}}) added for Hive 0.13 and earlier |
 | FROM TABLE (VALUES ... ) clause | Row constructor | SELECT UNION ALL subquery |
 
 For more information, see [SELECT Statement]({{< ref "select" >}}).

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : FETCH Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - FETCH Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : FETCH Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - FETCH Statement
 
 FETCH statement retrieve the next row from a cursor and assigns column values to local variable.
 

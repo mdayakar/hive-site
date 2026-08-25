@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : ACTIVITY_COUNT Variable - PL/HQL"
+title: "Apache Hive : HPL/SQL - ACTIVITY_COUNT Variable"
 date: 2026-08-12
 ---
 
-# Apache Hive : ACTIVITY_COUNT Variable - PL/HQL
+# Apache Hive : HPL/SQL - ACTIVITY_COUNT Variable
 
 ACTIVITY_COUNT built-in variable contains the number of rows affected by the last SQL statement.
 
@@ -25,7 +25,7 @@ END IF;
 
 **Compatibility:** Teradata
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 **See also:**
 - [GET DIAGNOSTICS ROW_COUNT]({{< ref "get-diagnostics" >}})

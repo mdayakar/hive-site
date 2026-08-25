@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : BREAK Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - BREAK Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : BREAK Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - BREAK Statement
 
 BREAK statement exits the innermost loop. 
 

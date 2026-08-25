@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : LOOP Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - LOOP Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : LOOP Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - LOOP Statement
 
 LOOP statement executes one or more statements until you exit the loop using EXIT, LEAVE or BREAK statements, or raising an exception. 
 

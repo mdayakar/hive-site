@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : TO_TIMESTAMP Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - TO_TIMESTAMP Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : TO_TIMESTAMP Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - TO_TIMESTAMP Function
 
 TO_TIMESTAMP function converts a string to TIMESTAMP data type using the specified format. 
 
@@ -19,8 +19,9 @@ TIMESTAMP
 
 **Format Elements**:
 
-| YYYY | 4-digit year |
+| Element | Description |
 | --- | --- |
+| YYYY | 4-digit year |
 | MM | Month (1-12) |
 | DD | Day (1-31) |
 | HH24 | Hour of the day (0-23) |
@@ -37,7 +38,7 @@ TO_TIMESTAMP('2015-04-02 13:51:31', 'YYYY-MM-DD HH24:MI:SS');
 
 **Compatibility**: Oracle, IBM DB2, Teradata
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [DATE Literal]({{< ref "date-literal" >}})

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DROP DATABASE Statement"
+title: "Apache Hive : HPL/SQL - DROP DATABASE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : DROP DATABASE Statement
+# Apache Hive : HPL/SQL - DROP DATABASE Statement
 
 DROP DATABASE statement allows you to drop a database.
 
@@ -23,7 +23,7 @@ drop database if exists 'test' || replace(current_date, '-', '');
 
 **Compatibility:** Hive
 
-**Version:** HPL/SQL 0.3.17
+<!-- **Version:** HPL/SQL 0.3.17 -->
 
 See also:
 - [CREATE DATABASE]({{< ref "create-database" >}})

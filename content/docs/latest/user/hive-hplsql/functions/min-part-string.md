@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : MIN_PART_STRING Function - PL/HQL"
+title: "Apache Hive : HPL/SQL - MIN_PART_STRING Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : MIN_PART_STRING Function - PL/HQL
+# Apache Hive : HPL/SQL - MIN_PART_STRING Function
 
 MIN_PART_STRING function finds the minimum value (first in alphabetical order) for the specified partition column of type STRING (VARCHAR/CHAR).
 
@@ -39,8 +39,9 @@ STRING (VARCHAR/CHAR).
 
 Table *db.orders* is partitioned by *country* and has the following partitions:
 
-| country=US |
+| Partitions |
 | --- |
+| country=US |
 | country=UK |
 | country=DE |
 
@@ -56,8 +57,9 @@ Result: DE
 
 Table *db.sales* is partitioned by *country* and *local_date* and has the following partitions:
 
-| country=US/local_date=2014-12-02 |
+| Partitions |
 | --- |
+| country=US/local_date=2014-12-02 |
 | country=DE/local_date=2014-12-04 |
 | country=UK/local_date=2014-12-04 | 
 
@@ -69,9 +71,9 @@ MIN_PARTITION_STRING(db.sales, country, local_date='2014-12-04');
 
 Result: DE
 
-**Compatibility**: PL/HQL extension.
+**Compatibility**: HPL/SQL extension.
 
-**Version:** PL/HQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->
 
 See also:
 

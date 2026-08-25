@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CURRENT_DATE Function"
+title: "Apache Hive : HPL/SQL - CURRENT_DATE Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : CURRENT_DATE Function
+# Apache Hive : HPL/SQL - CURRENT_DATE Function
 
 CURRENT_DATE function return the current date (year, month and day).
 
@@ -19,7 +19,7 @@ DATE
 
 **Compatibility**: IBM DB2, Teradata, MySQL.
 
-**Version:** HPL/SQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->
 
 See also:
 

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DECLARE CONDITION Statement - PL/HQL"
+title: "Apache Hive : HPL/SQL - DECLARE CONDITION Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : DECLARE CONDITION Statement - PL/HQL
+# Apache Hive : HPL/SQL - DECLARE CONDITION Statement
 
 You can use DECLARE CONDITION statement to declare a user-defined condition. 
 
@@ -35,7 +35,7 @@ END IF;
 
 **Compatibility:** IBM DB2, Teradata and MySQL.
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 **See also:**
 - [Error Handling]({{< ref "error-handling" >}})

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : FOR Statement (Integer Range) - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - FOR Statement (Integer Range)"
 date: 2026-08-12
 ---
 
-# Apache Hive : FOR Statement (Integer Range) - PL/HQL Reference
+# Apache Hive : HPL/SQL - FOR Statement (Integer Range)
 
 FOR statement executes one or more statements repeatedly for the specified range of integer values. 
 
@@ -43,4 +43,4 @@ END LOOP;
 
 **Compatibility:** Oracle, PostgreSQL and Netezza.
 
-**Version:** PL/HQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SQLCODE - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - SQLCODE"
 date: 2026-08-12
 ---
 
-# Apache Hive : SQLCODE - PL/HQL Reference
+# Apache Hive : HPL/SQL - SQLCODE
 
 SQLCODE built-in variable contains the return code of the last SQL statement. The code can be zero (0), negative or positive:
 
@@ -30,7 +30,7 @@ CLOSE cur;
 
 **Compatibility:** IBM DB2.
 
-**Version:** PL/HQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->
 
 **See also:**
 - [Error Handling]({{< ref "error-handling" >}})

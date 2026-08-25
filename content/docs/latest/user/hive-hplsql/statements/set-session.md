@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SET Session Option"
+title: "Apache Hive : HPL/SQL - SET Session Option"
 date: 2026-08-12
 ---
 
-# Apache Hive : SET Session Option
+# Apache Hive : HPL/SQL - SET Session Option
 
 SET statement allows you to set various session-level options. 
 
@@ -33,7 +33,7 @@ SET SCHEMA 'def' || 'ault';
 
 **Compatibility:** IBM DB2
 
-**Version:** HPL/SQL 0.3.11
+<!-- **Version:** HPL/SQL 0.3.11 -->
 
 **See also:**
 - [USE]({{< ref "use" >}})

@@ -1,11 +1,11 @@
 ---
-title: "Apache Hive : Exceptions - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - Exceptions"
 date: 2026-08-12
 ---
 
-# Apache Hive : Exceptions - PL/HQL Reference
+# Apache Hive : HPL/SQL - Exceptions
 
-PL/HQL allows you to handle exceptions in your programs. 
+HPL/SQL allows you to handle exceptions in your programs. 
 
 **Syntax:**
 

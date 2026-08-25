@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : String Concatenation ||"
+title: "Apache Hive : HPL/SQL - String Concatenation ||"
 date: 2026-08-12
 ---
 
-# Apache Hive : String Concatenation ||
+# Apache Hive : HPL/SQL - String Concatenation ||
 
 You can use || operator to concatenate two or more strings.
 
@@ -28,11 +28,11 @@ If an operand is NULL, it is treated as an empty string '' in the concatenation.
 
 **On-the-fly SQL Conversion**
 
-Hive does not support || operator, so PL/HQL automatically converts in to [CONCAT]({{< ref "concat" >}}) function in SQL SELECT statements.
+Hive does not support || operator, so HPL/SQL automatically converts in to [CONCAT]({{< ref "concat" >}}) function in SQL SELECT statements.
 
 **Compatibility:** Oracle, IBM DB2, Teradata, PostgreSQL and Netezza
 
-**Version:** HPL/SQL 0.1
+<!-- **Version:** HPL/SQL 0.1 -->
 
 See also:
 - [CONCAT Function]({{< ref "concat" >}})

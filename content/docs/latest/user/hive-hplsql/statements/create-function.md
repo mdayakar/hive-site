@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CREATE FUNCTION Statement"
+title: "Apache Hive : HPL/SQL - CREATE FUNCTION Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CREATE FUNCTION Statement
+# Apache Hive : HPL/SQL - CREATE FUNCTION Statement
 
 CREATE FUNCTION statement allows you to create a user-defined SQL function.
 
@@ -56,7 +56,7 @@ PRINT hello2('world');
 
 **Compatibility:** Oracle, Teradata, IBM DB2, Microsoft SQL Server, PostgreSQL, MySQL and Netezza
 
-**Version**: HPL/HQL 0.3.1
+<!-- **Version**: HHPL/SQL 0.3.1 -->
 
 See also:
 - [User-Defined Functions and Stored Procedures]({{< ref "udf-sproc" >}})

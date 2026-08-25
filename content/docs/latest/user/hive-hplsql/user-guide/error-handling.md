@@ -1,28 +1,28 @@
 ---
-title: "Apache Hive : Error Handling in PL/HQL"
+title: "Apache Hive : HPL/SQL - Error Handling"
 date: 2026-08-12
 ---
 
-# Apache Hive : Error Handling in PL/HQL
+# Apache Hive : HPL/SQL - Error Handling
 
-PL/HQL allows you to use exceptions, condition handlers and error code to handle errors. The [plhql.onerror]({{< ref "configuration#plhqlonerror" >}}) configuration option defines how PL/HQL handles errors. It accepts the following values:
+HPL/SQL allows you to use exceptions, condition handlers and error code to handle errors. The [hplsql.onerror]({{< ref "configuration#hplsqlonerror" >}})  configuration option defines how HPL/SQL handles errors. It accepts the following values:
 
 - **Exception** (default)
 
-In this case when an error occurs, PL/HQL raises an exception. If there is an exception or condition handler for this error, it is executed. 
+In this case when an error occurs, HPL/SQL raises an exception. If there is an exception or condition handler for this error, it is executed. 
 
 - **Seterror** 
 
-When Seterror is specified, PL/HQL sets the error code to SQLCODE or HOSTCODE variables and continues execution.
+When Seterror is specified, HPL/SQL sets the error code to SQLCODE or HOSTCODE variables and continues execution.
 
 - **Stop**
 
-PL/HQL stops executing the script and exits.
+HPL/SQL stops executing the script and exits.
 
-Note that you can dynamically change [plhql.onerror]({{< ref "configuration#plhqlonerror" >}}) option by executing the SET statement in the script:
+Note that you can dynamically change [hplsql.onerror]({{< ref "configuration#hplsqlonerror" >}}) option by executing the SET statement in the script:
 
 ```
-SET plhql.onerror = exception | seterror | stop;
+SET hplsql.onerror = exception | seterror | stop;
 ```
 
 **See also:**

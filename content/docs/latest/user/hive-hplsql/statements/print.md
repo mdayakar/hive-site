@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : PRINT Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - PRINT Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : PRINT Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - PRINT Statement
 
 PRINT statement prints a line and can be helpful to debug programs. The statement appends a line terminator. 
 

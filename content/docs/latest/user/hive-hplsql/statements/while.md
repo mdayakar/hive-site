@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : WHILE Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - WHILE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : WHILE Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - WHILE Statement
 
 WHILE statement executes one or more statements while the condition is true. 
 

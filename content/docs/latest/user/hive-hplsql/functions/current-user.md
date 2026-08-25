@@ -1,11 +1,11 @@
 ---
-title: "Apache Hive : CURRENT_USER Function - PL/HQL"
+title: "Apache Hive : HPL/SQL - CURRENT_USER Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : CURRENT_USER Function - PL/HQL
+# Apache Hive : HPL/SQL - CURRENT_USER Function
 
-CURRENT_USER function returns the name of the user executing the current PL/HQL script.
+CURRENT_USER function returns the name of the user executing the current HPL/SQL script.
 
 **Syntax**:
 
@@ -29,7 +29,7 @@ paul
 
 **Compatibility**: IBM DB2, Teradata.
 
-**Version:** PL/HQL 0.3.11
+<!-- **Version:** HPL/SQL 0.3.11 -->
 
 See also:
 

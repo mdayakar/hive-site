@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : UTL_FILE Package - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - UTL_FILE Package"
 date: 2026-08-12
 ---
 
-# Apache Hive : UTL_FILE Package - PL/HQL Reference
+# Apache Hive : HPL/SQL - UTL_FILE Package
 
 UTL_FILE package allows you to read and write HDFS files:
 

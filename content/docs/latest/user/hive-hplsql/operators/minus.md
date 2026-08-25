@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Subtraction Operator (-) PL/HQL"
+title: "Apache Hive : HPL/SQL - Subtraction Operator (-)"
 date: 2026-08-12
 ---
 
-# Apache Hive : Subtraction Operator (-) PL/HQL
+# Apache Hive : HPL/SQL - Subtraction Operator (-)
 
 You can use (-) arithmetic operator to subtract two numbers, or subtract the number of days from a DATE value.
 
@@ -25,7 +25,7 @@ When you subtract two integer values the result of the operation also has an int
 
 ## Subtract Integer from Date
 
-When you subtract an integer from a DATE value, PL/HQL subtracts the number of days from the DATE and the result of the operation is a DATE value.
+When you subtract an integer from a DATE value, HPL/SQL subtracts the number of days from the DATE and the result of the operation is a DATE value.
 
 **Example:**
 

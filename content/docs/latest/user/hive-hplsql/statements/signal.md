@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SIGNAL Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - SIGNAL Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : SIGNAL Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - SIGNAL Statement
 
 SIGNAL statement raises a user-defined condition (exception).
 
@@ -33,7 +33,7 @@ END IF;
 
 **Compatibility**: IBM DB2, Teradata and MySQL
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 **See also:**
 - [Error Handling]({{< ref "error-handling" >}})

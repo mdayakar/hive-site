@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : EXECUTE Statement"
+title: "Apache Hive : HPL/SQL - EXECUTE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : EXECUTE Statement
+# Apache Hive : HPL/SQL - EXECUTE Statement
 
 EXECUTE (EXEC or EXECUTE IMMEDIATE) statement executes a dynamic SQL statement and can return the scalar result to local variables. 
 
@@ -69,6 +69,6 @@ EXEC spOrders @lim = 3
 
 **Compatibility:** Oracle, IBM DB2 and Microsoft SQL Server.
 
-**Version:** 
+<!-- **Version:** 
 - HPL/SQL 0.3.11 - Execute a stored procedure
-- PL/HQL 0.01
+- HPL/SQL 0.01 -->

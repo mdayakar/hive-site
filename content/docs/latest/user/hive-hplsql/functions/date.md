@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DATE Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - DATE Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : DATE Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - DATE Function
 
 DATE function converts an expression to DATE data type.
 
@@ -29,7 +29,7 @@ DATE(TIMESTAMP '2015-03-12 10:58:34.111');
 
 **Compatibility**: IBM DB2
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [DATE Literal]({{< ref "date-literal" >}})

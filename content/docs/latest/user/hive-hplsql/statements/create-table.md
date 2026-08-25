@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CREATE TABLE Statement - PL/HQL"
+title: "Apache Hive : HPL/SQL - CREATE TABLE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CREATE TABLE Statement - PL/HQL
+# Apache Hive : HPL/SQL - CREATE TABLE Statement
 
 CREATE TABLE statement create a table in the database.
 
@@ -22,7 +22,7 @@ CREATE TABLE [IF NOT EXISTS] table_name
 
 If the CREATE TABLE statement is defined using the syntax not supported by Hive, it is automatically converted to conform to Hive syntax. 
 
-Currently PL/HQL converts data types, removes NOT NULL/NULL, constraints and default values. For more information, see [On-the-Fly Conversion]({{< ref "conversion" >}})
+Currently HPL/SQL converts data types, removes NOT NULL/NULL, constraints and default values. For more information, see [On-the-Fly Conversion]({{< ref "conversion" >}})
 
 **Example**:
 
@@ -39,4 +39,4 @@ CREATE TABLE dept (
 
 **Compatibility:** Oracle, Microsoft SQL Server, IBM DB2, Teradata, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->

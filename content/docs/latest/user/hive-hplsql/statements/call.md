@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CALL Statement - PL/HQL"
+title: "Apache Hive : HPL/SQL - CALL Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CALL Statement - PL/HQL
+# Apache Hive : HPL/SQL - CALL Statement
 
 CALL statement allows you to execute a stored procedure.
 
@@ -35,7 +35,7 @@ Hello, world!
 
 **Compatibility:** Teradata, IBM DB2 and MySQL
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [User-Defined Functions and Stored Procedures]({{< ref "udf-sproc" >}})

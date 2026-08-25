@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : PART_COUNT_BY Function"
+title: "Apache Hive : HPL/SQL - PART_COUNT_BY Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : PART_COUNT_BY Function
+# Apache Hive : HPL/SQL - PART_COUNT_BY Function
 
 PART_COUNT_BY function returns the number partitions grouped by specified partition columns in the table.
 
@@ -15,8 +15,9 @@ PART_COUNT_BY([db_name.]table_name, [part_col, ...]);
 
 **Parameters:**
 
-| [dbname.]table_name | Identifier, variable or expression |
+| Parameter | Description |
 | --- | --- |
+| [dbname.]table_name | Identifier, variable or expression |
 | part_col | One or more partition columns used for aggregation |
 
 **Return Value:**
@@ -28,8 +29,9 @@ PART_COUNT_BY([db_name.]table_name, [part_col, ...]);
 
 Table *db.orders* is partitioned by *dt* and *region* columns and has the following partitions:
 
-| dt=2015-09-01/region=1 |
+| Partitions |
 | --- |
+| dt=2015-09-01/region=1 |
 | dt=2015-09-01/region=2 |
 | dt=2015-09-02/region=1 |
 | dt=2015-09-03/region=3 |
@@ -65,7 +67,7 @@ region=3    1
 
 **Compatibility**: HPL/SQL extension.
 
-**Version:** HPL/SQL 0.3.13
+<!-- **Version:** HPL/SQL 0.3.13 -->
 
 See also:
 - [PART_COUNT]({{< ref "part-count" >}}) - Get the number of partitions

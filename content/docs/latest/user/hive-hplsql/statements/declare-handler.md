@@ -1,11 +1,11 @@
 ---
-title: "Apache Hive : DECLARE HANDLER Statement - PL/HQL"
+title: "Apache Hive : HPL/SQL - DECLARE HANDLER Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : DECLARE HANDLER Statement - PL/HQL
+# Apache Hive : HPL/SQL - DECLARE HANDLER Statement
 
-You can use DECLARE HANDLER statement to define one or more PL/HQL statements to execute when a condition occurs.
+You can use DECLARE HANDLER statement to define one or more HPL/SQL statements to execute when a condition occurs.
 
 **Syntax**:
 
@@ -16,10 +16,11 @@ DECLARE [CONTINUE | EXIT] HANDLER FOR
 
 **Description:**
 
-| CONTINUE | When the handler completes, control is returned to PL/HQL statement following the statement that raised the condition |
+| Parameter | Description |
 | --- | --- |
+| CONTINUE | When the handler completes, control is returned to HPL/SQL statement following the statement that raised the condition |
 | EXIT | After the handler completes, control is returned to the end of the block that declared the handler |
-| *code_block* | PL/HQL statement(s) to execute when the specified condition occurs |
+| *code_block* | HPL/SQL statement(s) to execute when the specified condition occurs |
 
 **Examples:**
 
@@ -42,9 +43,9 @@ CLOSE cur;
 
 **Compatibility:** IBM DB2, Teradata and MySQL.
 
-**Version**: 
-- PL/HQL 0.3.1 - User-defined condition supported
-- PL/HQL 0.01 - Introduced
+<!-- **Version**: 
+- HPL/SQL 0.3.1 - User-defined condition supported
+- HPL/SQL 0.01 - Introduced -->
 
 **See also:**
 - [Error Handling]({{< ref "error-handling" >}})

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : User-Defined Functions and Stored Procedures ="
+title: "Apache Hive : HPL/SQL - User-Defined Functions and Stored Procedures"
 date: 2026-08-12
 ---
 
-# Apache Hive : User-Defined Functions and Stored Procedures =
+# Apache Hive : HPL/SQL - User-Defined Functions and Stored Procedures
 
 HPL/SQL allows you to defined user-defined functions and stored procedures using [CREATE FUNCTION]({{< ref "create-function" >}}) and [CREATE PROCEDURE]({{< ref "create-procedure" >}}) statements, respectively.
 
@@ -34,9 +34,19 @@ CALL set_message('world', str);
 PRINT str;
 ```
 
-Once defined the function can be used in any HPL/SQL and HQL expression as a built-in function. You can invoke a procedure using the [CALL]({{< ref "call" >}}) statement.
+Once defined the function/procedure, the metadata of the function/procedure will be stored in the HMS permanently and they can be used in any HPL/SQL and HQL expression as a built-in function. You can invoke a procedure using the [CALL]({{< ref "call" >}}) statement.
 
-## Permanent Functions and Stored Procedures
+Use drop procedure/function to delete them permanently.
+```
+DROP PROCEDURE set_message;
+
+DROP FUNCTION hello;
+```
+
+
+<!-- The below content is commented because this content is not applicable now. Initially HPLSQL was provided as a stand alone command line tool which was supporting multiple databases including Hive. As a part of ([HIVE-24230](https://issues.apache.org/jira/browse/HIVE-24230)) HPL/SQL has been re-architected to an integrated part of HiveServer (HS2). So this content is commented for history purpose as http://hplsql.org/doc site is not up where the contet is maintained. For the same purpose some pages are renamed to *.md.bak which are not applicable now but renamed for history purpose. Going forward those files and commented content will be removed. -->
+
+<!-- ## Permanent Functions and Stored Procedures
 
 HPL/SQL allows you to share functions and procedures between HPL/SQL scripts so you do not need to put their content to every script. 
 
@@ -54,12 +64,12 @@ Using [INCLUDE]({{< ref "include" >}}) statement you can load function and proce
 
 HPL/SQL allows you to invoke user-defined functions written in HPL/SQL language from Hive queries the same way as you use HQL built-in functions.
 
-HPL/SQL CLI tool automatically puts referenced HPL/SQL functions and procedures to Distributed Cache, registers the Hive UDF and modifies the function call in the SQL statements. For more information, see [Hive UDF to Run HPL/HQL Scripts]({{< ref "udf" >}}).
+HPL/SQL CLI tool automatically puts referenced HPL/SQL functions and procedures to Distributed Cache, registers the Hive UDF and modifies the function call in the SQL statements. For more information, see [Hive UDF to Run HHPL/SQL Scripts]({{< ref "udf" >}}).
 
-**Version**: HPL/SQL 0.3.1
+**Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [CALL]({{< ref "call" >}})
 - [CREATE FUNCTION]({{< ref "create-function" >}})
 - [CREATE PROCEDURE]({{< ref "create-procedure" >}})
-- [INCLUDE]({{< ref "include" >}})
+<!-- - [INCLUDE]({{< ref "include" >}}) -->

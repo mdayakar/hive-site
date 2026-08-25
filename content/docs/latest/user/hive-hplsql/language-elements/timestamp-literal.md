@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : TIMESTAMP Literal - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - TIMESTAMP Literal"
 date: 2026-08-12
 ---
 
-# Apache Hive : TIMESTAMP Literal - PL/HQL Reference
+# Apache Hive : HPL/SQL - TIMESTAMP Literal
 
 TIMESTAMP literal allows you to specify a timestamp constant using a string in 'YYYY-MM-DD HH:MI:SS.FFF' or 'YYYY-MM-DD-HH.MI.SS.FFF' format. 
 
@@ -23,7 +23,7 @@ TIMESTAMP '2015-03-03-11.39.31.123'   -- DB2 syntax
 
 **Compatibility:** Oracle, IBM DB2.
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 

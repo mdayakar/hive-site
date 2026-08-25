@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : PART_LOC Function"
+title: "Apache Hive : HPL/SQL - PART_LOC Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : PART_LOC Function
+# Apache Hive : HPL/SQL - PART_LOC Function
 
 PART_LOC function returns the location of the specified table partition in HDFS or other storage.
 
@@ -69,4 +69,4 @@ Result:
 
 **Compatibility**: HPL/SQL extension.
 
-**Version:** HPL/SQL 0.1
+<!-- **Version:** HPL/SQL 0.1 -->

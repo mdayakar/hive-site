@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : PART_COUNT Function"
+title: "Apache Hive : HPL/SQL - PART_COUNT Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : PART_COUNT Function
+# Apache Hive : HPL/SQL - PART_COUNT Function
 
 PART_COUNT function returns the number partitions in the specified table.
 
@@ -15,8 +15,9 @@ PART_COUNT([db_name.]table_name, part_col=filter, ...);
 
 **Parameters:**
 
-| [dbname.]table_name | Identifier, variable or expression |
+| Parameter | Description |
 | --- | --- |
+| [dbname.]table_name | Identifier, variable or expression |
 | part_col=filter | One or more partition filters |
 
 **Notes**:
@@ -40,8 +41,9 @@ INT
 
 Table *db.orders* is partitioned by *dt* and *region* columns and has the following partitions:
 
-| dt=2015-09-01/region=1 |
+| Partitions |
 | --- |
+| dt=2015-09-01/region=1 |
 | dt=2015-09-01/region=2 |
 | dt=2015-09-02/region=1 |
 | dt=2015-09-03/region=3 |
@@ -65,7 +67,7 @@ part_count(db.orders, region='1');
 
 **Compatibility**: HPL/SQL extension.
 
-**Version:** HPL/SQL 0.3.13
+<!-- **Version:** HPL/SQL 0.3.13 -->
 
 See also:
 - [PART_COUNT_BY]({{< ref "part-count-by" >}}) - Get the number of partitions (group by)

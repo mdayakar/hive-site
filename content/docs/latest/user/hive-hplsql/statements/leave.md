@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : LEAVE Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - LEAVE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : LEAVE Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - LEAVE Statement
 
 LEAVE statement exits the loop or block marked by the given label. If the label is not specified, LEAVE exists  the innermost loop. 
 

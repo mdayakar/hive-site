@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : %ROWTYPE Attribute"
+title: "Apache Hive : HPL/SQL - %ROWTYPE Attribute"
 date: 2026-08-12
 ---
 
-# Apache Hive : %ROWTYPE Attribute
+# Apache Hive : HPL/SQL - %ROWTYPE Attribute
 
 %ROWTYPE attribute lets you declare a record variable that has the same columns and data types as the specified database table.
 
@@ -56,4 +56,4 @@ END;
 
 **Compatibility:** Oracle
 
-**Version:** HPL/SQL 0.3.13
+<!-- **Version:** HPL/SQL 0.3.13 -->

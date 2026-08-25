@@ -1,14 +1,15 @@
 ---
-title: "Apache Hive : Equality and Comparison Operators - PL/HQL"
+title: "Apache Hive : HPL/SQL - Equality and Comparison Operators"
 date: 2026-08-12
 ---
 
-# Apache Hive : Equality and Comparison Operators - PL/HQL
+# Apache Hive : HPL/SQL - Equality and Comparison Operators
 
 You can use equality and comparison operators `=, ==, <>, !=, <, >, >=, <=` to determine if one operand is equal, not equal, less or greater than another operand.
 
-| = | == | Equal |
+| | |
 | --- | --- | --- |
+| = | == | Equal |
 | <> | != | Not equal |
 | > || Greater than |
 | < || Less than |

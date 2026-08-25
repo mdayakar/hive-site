@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : NVL2 Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - NVL2 Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : NVL2 Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - NVL2 Function
 
 If the first expression is NOT NULL, NVL2 function returns the result of the second expression, otherwise it returns the result of the third expression.
 
@@ -37,4 +37,4 @@ Result: 2
 
 **Compatibility**: Oracle and IBM DB2.
 
-**Version**: PL/HQL 0.01
+<!-- **Version**: HPL/SQL 0.01 -->

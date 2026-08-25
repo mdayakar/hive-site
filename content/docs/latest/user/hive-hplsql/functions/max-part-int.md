@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : MAX_PART_INT Function - PL/HQL"
+title: "Apache Hive : HPL/SQL - MAX_PART_INT Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : MAX_PART_INT Function - PL/HQL
+# Apache Hive : HPL/SQL - MAX_PART_INT Function
 
 MAX_PART_INT function finds the maximum value for the specified partition column of type INT.
 
@@ -40,8 +40,9 @@ INT.
 
 Table *db.orders* is partitioned by *country*, *local_dt* and *hour* and has the following partitions:
 
-| country=US/local_dt=2014-12-05/hour=1 |
+| Partitions |
 | --- |
+| country=US/local_dt=2014-12-05/hour=1 |
 | country=US/local_dt=2014-12-05/hour=2 |
 | country=US/local_dt=2014-12-05/hour=3 |
 | country=US/local_dt=2014-12-05/hour=UNKNOWN |
@@ -58,8 +59,9 @@ Result: 3
 
 Table *db.sales* is partitioned by *country*, *local_date* and *hour* has the following partitions:
 
-| country=US/local_dt=2014-12-06/hour=1 |
+| Partitions |
 | --- |
+| country=US/local_dt=2014-12-06/hour=1 |
 | country=US/local_dt=2014-12-07/hour=2 |
 | country=US/local_dt=2014-12-07/hour=UNKNOWN |
 | country=US/local_dt=2014-12-08/hour=3 |
@@ -72,9 +74,9 @@ MAX_PART_INT(db.sales, hour, local_date='2014-12-07');
 
 Result: 2
 
-**Compatibility**: PL/HQL extension.
+**Compatibility**: HPL/SQL extension.
 
-**Version:** PL/HQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->
 
 See also:
 

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : FOR Statement (Cursor Loop) - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - FOR Statement (Cursor Loop)"
 date: 2026-08-12
 ---
 
-# Apache Hive : FOR Statement (Cursor Loop) - PL/HQL Reference
+# Apache Hive : HPL/SQL - FOR Statement (Cursor Loop)
 
 FOR statement opens a cursor, executes one or more statements repeatedly for each row and closes the cursor. 
 
@@ -35,4 +35,4 @@ END LOOP;
 
 **Compatibility:** Oracle, PostgreSQL and Netezza
 
-**Version:** PL/HQL 0.03
+<!-- **Version:** HPL/SQL 0.03 -->

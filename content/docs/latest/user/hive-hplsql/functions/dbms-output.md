@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DBMS_OUTPUT Package - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - DBMS_OUTPUT Package"
 date: 2026-08-12
 ---
 
-# Apache Hive : DBMS_OUTPUT Package - PL/HQL Reference
+# Apache Hive : HPL/SQL - DBMS_OUTPUT Package
 
 DBMS_OUTPUT package allows you to send messages and can be helpful to debug programs
 

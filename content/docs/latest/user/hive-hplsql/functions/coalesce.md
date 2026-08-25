@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : COALESCE Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - COALESCE Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : COALESCE Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - COALESCE Function
 
 COALESCE function returns first non-NULL expression.
 
@@ -43,7 +43,7 @@ Result: 1
 
 **Compatibility**: Oracle, IBM DB2, Teradata, Microsoft SQL Server, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [NVL]({{< ref "nvl" >}})

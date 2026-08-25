@@ -1,13 +1,13 @@
 ---
-title: "Apache Hive : IF Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - IF Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : IF Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - IF Statement
 
 IF statement executes a set of statements depending on the value of a boolean expression.
 
-PL/HQL supports multiple syntaxes for IF statement. 
+HPL/SQL supports multiple syntaxes for IF statement. 
 
 ## IF - THEN - ELSIF/ELSEIF - ELSE - END IF
 

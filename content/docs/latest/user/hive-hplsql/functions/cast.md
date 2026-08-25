@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CAST Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - CAST Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : CAST Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - CAST Function
 
 CAST function converts an expression to the specified data type.
 
@@ -39,4 +39,4 @@ CAST(TIMESTAMP '2015-03-12 10:58:34.111' AS CHAR(10));
 
 **Compatibility**: Oracle, Microsoft SQL Server, IBM DB2, Teradata, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->

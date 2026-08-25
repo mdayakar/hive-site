@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DATE Literal - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - DATE Literal"
 date: 2026-08-12
 ---
 
-# Apache Hive : DATE Literal - PL/HQL Reference
+# Apache Hive : HPL/SQL - DATE Literal
 
 DATE literal allows you to specify a date constant using a string in 'YYYY-MM-DD' format. Then you can use this date value in any expression that expects a DATE data type.
 
@@ -17,7 +17,7 @@ DATE '2014-12-20' - 1    --         2014-12-19
 
 **Compatibility:** Oracle, IBM DB2 and Teradata
 
-**Version**: PL/HQL 0.01
+<!-- **Version**: HPL/SQL 0.01 -->
 
 See also:
 

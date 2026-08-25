@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : OPEN Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - OPEN Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : OPEN Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - OPEN Statement
 
 OPEN statement opens a cursor.
 
@@ -14,8 +14,9 @@ OPEN cursor_name [FOR expression | select_statement];
 ```
 
 **Description:**
-| cursor_name | The name of the previously declared cursor if FOR clause is not specified |
+| Parameter | Description |
 | --- | --- |
+| cursor_name | The name of the previously declared cursor if FOR clause is not specified |
 | FOR expression | Variable or expression that contains a dynamic SQL | 
 | FOR select_statement | SELECT statement |
 

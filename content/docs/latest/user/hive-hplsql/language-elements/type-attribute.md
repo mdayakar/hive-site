@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : %TYPE Attribute"
+title: "Apache Hive : HPL/SQL - %TYPE Attribute"
 date: 2026-08-12
 ---
 
-# Apache Hive : %TYPE Attribute
+# Apache Hive : HPL/SQL - %TYPE Attribute
 
 %TYPE attribute lets you declare a variable that has the same data type as the specified referenced column.
 
@@ -28,4 +28,4 @@ END;
 
 **Compatibility:** Oracle
 
-**Version:** HPL/SQL 0.3.13
+<!-- **Version:** HPL/SQL 0.3.13 -->

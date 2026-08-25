@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CURRENT_TIMESTAMP Function"
+title: "Apache Hive : HPL/SQL - CURRENT_TIMESTAMP Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : CURRENT_TIMESTAMP Function
+# Apache Hive : HPL/SQL - CURRENT_TIMESTAMP Function
 
 CURRENT_TIMESTAMP function returns the current date and time (year, month, day, hour, minute, seconds and fractional seconds).
 
@@ -35,7 +35,7 @@ CURRENT_TIMESTAMP(0)
 
 **Compatibility**: Oracle, IBM DB2, Teradata, MySQL.
 
-**Version:** HPL/SQL 0.1
+<!-- **Version:** HPL/SQL 0.1 -->
 
 See also:
 

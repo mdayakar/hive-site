@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : RESIGNAL Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - RESIGNAL Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : RESIGNAL Statement - PL/HQL Reference
+# Apache Hive : RESIGNAL Statement - HPL/SQL Reference
 
 RESIGNAL statement in used in a condition or exception handler to re-raise an error so it can be processed at a higher level.
 
@@ -102,7 +102,7 @@ Text: Some error
 
 **Compatibility**: IBM DB2, Teradata and MySQL
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 **See also:**
 - [Error Handling]({{< ref "error-handling" >}})

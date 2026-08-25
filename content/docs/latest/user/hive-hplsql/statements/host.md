@@ -1,11 +1,11 @@
 ---
-title: "Apache Hive : Execute OS Command or External Process"
+title: "Apache Hive : HPL/SQL - Execute OS Command or External Process"
 date: 2026-08-12
 ---
 
-# Apache Hive : Execute OS Command or External Process
+# Apache Hive : HPL/SQL - Execute OS Command or External Process
 
-PL/HQL allows you to execute an OS command or external process from a PL/HQL script:
+HPL/SQL allows you to execute an OS command or external process from a HPL/SQL script:
 
 **Syntax**:
 
@@ -50,4 +50,4 @@ HOST 'echo Hello, world';
 
 **Compatibility**: Apache Hive (! command), Oracle (HOST statement).
 
-**Version**: PL/HQL 0.01
+<!-- **Version**: HPL/SQL 0.01 -->

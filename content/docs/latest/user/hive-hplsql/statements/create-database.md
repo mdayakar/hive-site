@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CREATE DATABASE Statement"
+title: "Apache Hive : HPL/SQL - CREATE DATABASE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CREATE DATABASE Statement
+# Apache Hive : HPL/SQL - CREATE DATABASE Statement
 
 CREATE DATABASE statement allows you to create a database.
 
@@ -25,7 +25,7 @@ create database 'test' || replace(current_date, '-', '');
 
 **Compatibility:** MySQL, MariaDB, Hive
 
-**Version:** HPL/SQL 0.3.17
+<!-- **Version:** HPL/SQL 0.3.17 -->
 
 See also:
 - [DROP DATABASE]({{< ref "drop-database" >}})

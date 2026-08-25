@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : TIMESTAMP_ISO Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - TIMESTAMP_ISO Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : TIMESTAMP_ISO Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - TIMESTAMP_ISO Function
 
 TIMESTAMP_ISO function converts a string or date expression to TIMESTAMP data type. 
 
@@ -41,7 +41,7 @@ TIMESTAMP_ISO(DATE '2015-03-12');
 
 **Compatibility**: IBM DB2
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [DATE Literal]({{< ref "date-literal" >}})

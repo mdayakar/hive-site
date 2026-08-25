@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SELECT Statement"
+title: "Apache Hive : HPL/SQL - SELECT Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : SELECT Statement
+# Apache Hive : HPL/SQL - SELECT Statement
 
 SELECT statement allows you to run queries. 
 
@@ -19,13 +19,13 @@ SELECT TOP 3 name FROM sales;    -- SELECT name FROM sales LIMIT 3 is executed
 
 **Compatibility**: Microsoft SQL Server.
 
-**Version**: PL/HQL 0.3.7
+<!-- **Version**: HPL/SQL 0.3.7 -->
 
 ## SELECT Without FROM Clause
 
-You can specify a SELECT statement without FROM. PL/SQL automatically adds the FROM clause using the table name defined by the [plhql.dual.table]({{< ref "configuration#plhqldualtable" >}}) option.  
+You can specify a SELECT statement without FROM. PL/SQL automatically adds the FROM clause using the table name defined by the [hplsql.dual.table]({{< ref "configuration#hplsqldualtable" >}}) option.  
 
-By default, PL/HQL uses *default.dual* table name. Make sure such table exists in the database and contains exactly one row and one column only.
+By default, HPL/SQL uses *default.dual* table name. Make sure such table exists in the database and contains exactly one row and one column only.
 
 **Example**:
 
@@ -35,7 +35,7 @@ SELECT unix_timestamp();    -- SELECT unix_timestamp() FROM default.dual is exec
 
 **Compatibility**: Microsoft SQL Server, PostgreSQL, MySQL and Netezza.
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 ## FROM TABLE (VALUES ... ) Clause
 
@@ -71,7 +71,7 @@ c1     c2
 3      3
 ```
 
-Note that PL/HQL transforms FROM (VALUES ...) clause to SELECT UNION ALL subquery before the execution in Hive:
+Note that HPL/SQL transforms FROM (VALUES ...) clause to SELECT UNION ALL subquery before the execution in Hive:
 
 ```
 SELECT * FROM
@@ -82,11 +82,11 @@ SELECT * FROM
  SELECT 3 AS c1, 3 AS c2 FROM default.dual) rn
 ```
 
-You can specify the single row, single column dual table using [plhql.dual.table]({{< ref "configuration#plhqldualtable" >}}) option.
+You can specify the single row, single column dual table using [hplsql.dual.table]({{< ref "configuration#hplsqldualtable" >}}) option.
 
 **Compatibility**: IBM DB2, Microsoft SQL Server
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [SELECT INTO]({{< ref "select-into" >}})

@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DECLARE TEMPORARY TABLE - PL/HQL"
+title: "Apache Hive : HPL/SQL - DECLARE TEMPORARY TABLE"
 date: 2026-08-12
 ---
 
-# Apache Hive : DECLARE TEMPORARY TABLE - PL/HQL
+# Apache Hive : HPL/SQL - DECLARE TEMPORARY TABLE
 
 DECLARE TEMPORARY TABLE statement allows you to define a temporary table for the current session.
 
@@ -31,14 +31,14 @@ DISTRIBUTE BY HASH (col, ...)
 LOGGED | NOT LOGGED
 ```
 
-For more details how temporary table support is implemented in PL/HQL, see [Native and Managed Temporary Tables]({{< ref "temporary-tables" >}}).
+For more details how temporary table support is implemented in HPL/SQL, see [Native and Managed Temporary Tables]({{< ref "temporary-tables" >}}).
 
 **Example**:
 
 Create a managed temporary table and use it in other SQL statements:
 
 ```
-SET plhql.temp.tables = managed;
+SET hplsql.temp.tables = managed;
 
 DECLARE TEMPORARY TABLE temp1
 (
@@ -53,7 +53,7 @@ SELECT * FROM temp1;
 
 **Compatibility:** IBM DB2
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [Native and Managed Temporary Tables]({{< ref "temporary-tables" >}})

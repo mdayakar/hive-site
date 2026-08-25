@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : LEN Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - LEN Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : LEN Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - LEN Function
 
 LEN function returns the length of the specified string expression in characters, **excluding** the trailing blanks.
 
@@ -27,7 +27,7 @@ LEN('Abc ');
 
 **Compatibility**: Microsoft SQL Server
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [LENGTH]({{< ref "length" >}})

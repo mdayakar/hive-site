@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : NVL Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - NVL Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : NVL Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - NVL Function
 
 NVL function returns first non-NULL expression.
 
@@ -43,7 +43,7 @@ Result: 1
 
 **Compatibility**: Oracle, IBM DB2 and Netezza.
 
-**Version**: PL/HQL 0.01
+<!-- **Version**: HPL/SQL 0.01 -->
 
 See also:
 - [COALESCE]({{< ref "coalesce" >}})

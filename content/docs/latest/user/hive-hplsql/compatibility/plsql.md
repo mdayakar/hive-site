@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Oracle PL/SQL Compatibility"
+title: "Apache Hive : HPL/SQL - Oracle PL/SQL Compatibility"
 date: 2026-08-12
 ---
 
-# Apache Hive : Oracle PL/SQL Compatibility
+# Apache Hive : HPL/SQL - Oracle PL/SQL Compatibility
 
 HPL/SQL compatibility with Oracle PL/SQL and SQL.
 

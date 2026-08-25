@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CMP Statement"
+title: "Apache Hive : HPL/SQL - CMP Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CMP Statement
+# Apache Hive : HPL/SQL - CMP Statement
 
 CMP statement helps you compare data in tables that can be located in the same or different databases. 
 
@@ -44,4 +44,4 @@ CMP SUM sales.users WHERE local_dt = CURRENT_DATE, users_daily AT mysqlconn;
 
 **Compatibility:** HPL/SQL Extension
 
-**Version:** HPL/SQL 0.3.13
+<!-- **Version:** HPL/SQL 0.3.13 -->

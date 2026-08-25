@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : TRIM Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - TRIM Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : TRIM Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - TRIM Function
 
 TRIM function removes leading and trailing characters from a string.
 
@@ -27,4 +27,4 @@ STRING
 
 **Compatibility**: Oracle, IBM DB2, Teradata, Microsoft SQL Server, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->

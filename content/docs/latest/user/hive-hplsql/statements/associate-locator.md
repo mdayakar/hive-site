@@ -1,5 +1,5 @@
 ---
-title: "Apache Hive : ASSOCIATE LOCATOR Statement"
+title: "Apache Hive : HPL/SQL - ASSOCIATE LOCATOR Statement"
 date: 2026-08-12
 ---
 
@@ -20,4 +20,4 @@ For examples, see [ALLOCATE CURSOR]({{< ref "allocate-cursor" >}}) statement.
 
 **Compatibility:** IBM DB2
 
-**Version:** HPL/SQL 0.3.11
+<!-- **Version:** HPL/SQL 0.3.11 -->

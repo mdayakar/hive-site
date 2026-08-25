@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : UNIX_TIMESTAMP Function"
+title: "Apache Hive : HPL/SQL - UNIX_TIMESTAMP Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : UNIX_TIMESTAMP Function
+# Apache Hive : HPL/SQL - UNIX_TIMESTAMP Function
 
 UNIX_TIMESTAMP function returns the current date and time in seconds since 1970-01-01 00:00:00.
 
@@ -29,7 +29,7 @@ UNIX_TIMESTAMP()
 
 **Compatibility**: Hive.
 
-**Version:** HPL/SQL 0.3.17
+<!-- **Version:** HPL/SQL 0.3.17 -->
 
 See also:
 

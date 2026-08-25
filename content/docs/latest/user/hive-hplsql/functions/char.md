@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CHAR Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - CHAR Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : CHAR Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - CHAR Function
 
 CHAR function converts a number to string.
 
@@ -27,7 +27,7 @@ CHAR(1000);
 
 **Compatibility**: IBM DB2
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [TO_CHAR Function]({{< ref "to-char" >}})

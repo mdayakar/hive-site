@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : RETURN Statement - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - RETURN Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : RETURN Statement - PL/HQL Reference
+# Apache Hive : HPL/SQL - RETURN Statement
 
 RETURN statement is used to return from a routine. 
 
@@ -37,4 +37,4 @@ RETURN NVL(v1, 1);
 
 **Compatibility:** Oracle, IBM DB2, SQL Server, Teradata, PostgreSQL, MySQL, Netezza.
 
-**Version:** PL/HQL 0.01
+<!-- **Version:** HPL/SQL 0.01 -->

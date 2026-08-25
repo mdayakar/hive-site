@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : USE Statement"
+title: "Apache Hive : HPL/SQL - USE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : USE Statement
+# Apache Hive : HPL/SQL - USE Statement
 
 USE statement allows you to change the default database used in SQL statements for the current connection. 
 
@@ -25,7 +25,7 @@ USE SUBSTR(var, 1, 3);
 
 **Compatibility**: Hive, MySQL, MariaDB
 
-**Version**: HPL/SQL 0.1
+<!-- **Version**: HPL/SQL 0.1 -->
 
 See also:
 - [CREATE DATABASE]({{< ref "create-database" >}})

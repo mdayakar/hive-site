@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : DECODE Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - DECODE Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : DECODE Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - DECODE Function
 
 DECODE function allows you to implement IF-THEN-ELSE logic.
 
@@ -32,7 +32,7 @@ PRINT DECODE (var1, 1, 'A', 2, 'B', NULL, 'C');    -- Result: C
 
 **Compatibility:** Oracle, IBM DB2 and Teradata
 
-**Version**: PL/HQL 0.3.1
+<!-- **Version**: HPL/SQL 0.3.1 -->
 
 See also:
 - [CASE Expression]({{< ref "case" >}})

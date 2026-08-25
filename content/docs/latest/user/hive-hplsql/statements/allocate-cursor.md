@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : ALLOCATE CURSOR Statement"
+title: "Apache Hive : HPL/SQL - ALLOCATE CURSOR Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : ALLOCATE CURSOR Statement
+# Apache Hive : HPL/SQL - ALLOCATE CURSOR Statement
 
 ALLOCATE CURSOR statement allows you to declare a cursor and associate it with a result set returned from a stored procedure.
 
@@ -147,7 +147,7 @@ CLOSE c2;
 
 **Compatibility:** IBM DB2 and Teradata
 
-**Version:** HPL/SQL 0.3.11
+<!-- **Version:** HPL/SQL 0.3.11 -->
 
 **See also:**
 - [OPEN]({{< ref "open" >}})

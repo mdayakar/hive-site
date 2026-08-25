@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Assignment"
+title: "Apache Hive : HPL/SQL - Assignment"
 date: 2026-08-12
 ---
 
-# Apache Hive : Assignment
+# Apache Hive : HPL/SQL - Assignment
 
 You can use the assignment operator or statement to set a new value to variable in HPL/SQL. 
 
@@ -29,7 +29,7 @@ count = 0;
 
 **Compatibility:** Oracle PL/SQL, PostgreSQL PL/pgSQL and Netezza NZPLSQL.
 
-**Version**: PL/HQL 0.01
+<!-- **Version**: HPL/SQL 0.01 -->
 
 ## Assignment Statement
 
@@ -53,7 +53,7 @@ SET (count, limit) = (0, 100);
 
 **Compatibility:** IBM DB2, Teradata, Microsoft SQL Server and MySQL.
 
-**Version**: PL/HQL 0.01
+<!-- **Version**: HPL/SQL 0.01 -->
 
 ## Assignment From a SELECT Statement
 
@@ -79,7 +79,7 @@ SELECT @count = count, @limit = limit FROM conf WHERE name = 'A';
 
 **Compatibility:** IBM DB2, Teradata, Microsoft SQL Server and MySQL.
 
-**Version**: PL/HQL 0.3.7
+<!-- **Version**: HPL/SQL 0.3.7 -->
 
 See also:
 - [SELECT INTO]({{< ref "select-into" >}})

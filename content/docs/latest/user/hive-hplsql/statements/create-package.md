@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : CREATE PACKAGE Statement"
+title: "Apache Hive : HPL/SQL - CREATE PACKAGE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : CREATE PACKAGE Statement
+# Apache Hive : HPL/SQL - CREATE PACKAGE Statement
 
 CREATE PACKAGE statement allows you to define a collection of related variables, procedures and functions.
 
@@ -74,7 +74,7 @@ print 'Number of users: ' || users.get_count();
 
 **Compatibility:** Oracle
 
-**Version**: HPL/SQL 0.3.13
+<!-- **Version**: HPL/SQL 0.3.13 -->
 
 See also:
 - [User-Defined Functions and Stored Procedures]({{< ref "udf-sproc" >}})

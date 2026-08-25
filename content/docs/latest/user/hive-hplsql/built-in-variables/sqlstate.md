@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : SQLSTATE - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - SQLSTATE"
 date: 2026-08-12
 ---
 
-# Apache Hive : SQLSTATE - PL/HQL Reference
+# Apache Hive : HPL/SQL - SQLSTATE
 
 SQLSTATE built-in variable contains a 5-character return status of the last SQL statement. 
 
@@ -12,7 +12,7 @@ SQLSTATE status code consists of a 2-character class code followed by a 3-charac
 **Example:**
 
 ```
-SET plhql.onerror = seterror; -- Prevent raising an exception
+SET hplsql.onerror = seterror; -- Prevent raising an exception
 
 SELECT 1 FROM abc.abc;
 PRINT SQLSTATE;
@@ -20,7 +20,7 @@ PRINT SQLSTATE;
 
 **Compatibility:** IBM DB2.
 
-**Version:** PL/HQL 0.03
+<!-- **Version:** HPL/SQL 0.03 -->
 
 **See also:**
 - [Error Handling]({{< ref "error-handling" >}})

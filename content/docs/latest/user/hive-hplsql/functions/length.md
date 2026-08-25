@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : LENGTH Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - LENGTH Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : LENGTH Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - LENGTH Function
 
 LENGTH function returns the length of the specified string expression in characters.
 
@@ -27,7 +27,7 @@ LENGTH('Abc ');
 
 **Compatibility**: Oracle, IBM DB2, Teradata, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->
 
 See also:
 - [LEN]({{< ref "len" >}})

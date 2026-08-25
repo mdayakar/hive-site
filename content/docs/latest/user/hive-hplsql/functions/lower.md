@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : LOWER Function - PL/HQL Reference"
+title: "Apache Hive : HPL/SQL - LOWER Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : LOWER Function - PL/HQL Reference
+# Apache Hive : HPL/SQL - LOWER Function
 
 LOWER function converts a string expression to lower case.
 
@@ -29,4 +29,4 @@ abc
 
 **Compatibility**: Oracle, Microsoft SQL Server, IBM DB2, Teradata, PostgreSQL, MySQL and Netezza
 
-**Version**: PL/HQL 0.03
+<!-- **Version**: HPL/SQL 0.03 -->

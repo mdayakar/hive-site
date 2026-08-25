@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : TRUNCATE TABLE Statement"
+title: "Apache Hive : HPL/SQL - TRUNCATE TABLE Statement"
 date: 2026-08-12
 ---
 
-# Apache Hive : TRUNCATE TABLE Statement
+# Apache Hive : HPL/SQL - TRUNCATE TABLE Statement
 
 TRUNCATE TABLE statement removes all rows in the specified table.
 
@@ -23,7 +23,7 @@ truncate table users2015;
 
 **Compatibility:** Oracle, Microsoft SQL Server, IBM DB2, MySQL, Hive
 
-**Version**: HPL/SQL 0.3.17
+<!-- **Version**: HPL/SQL 0.3.17 -->
 
 See also:
 - [DROP TABLE]({{< ref "drop-table" >}})

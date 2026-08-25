@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : Interval Expressions"
+title: "Apache Hive : HPL/SQL - Interval Expressions"
 date: 2026-08-12
 ---
 
-# Apache Hive : Interval Expressions
+# Apache Hive : HPL/SQL - Interval Expressions
 
 Interval expressions allow you to add or subtract interval values to DATE and TIMESTAMP values.
 
@@ -77,9 +77,9 @@ date '2016-01-27' - interval '3' day;
 
 **Compatibility:** IBM DB2, Oracle, Teradata
 
-**Version**: 
+<!-- **Version**: 
 - INTERVAL keyword - HPL/SQL 0.3.17
-- Introduced - HPL/HQL 0.3
+- Introduced - HHPL/SQL 0.3 -->
 
 See also:
 

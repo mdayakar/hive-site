@@ -1,9 +1,9 @@
 ---
-title: "Apache Hive : NOW Function"
+title: "Apache Hive : HPL/SQL - NOW Function"
 date: 2026-08-12
 ---
 
-# Apache Hive : NOW Function
+# Apache Hive : HPL/SQL - NOW Function
 
 NOW function returns the current date and time (year, month, day, hour, minute, seconds and fractional seconds).
 
@@ -29,7 +29,7 @@ NOW()
 
 **Compatibility**: PostgreSQL and MySQL.
 
-**Version:** HPL/SQL 0.3.17
+<!-- **Version:** HPL/SQL 0.3.17 -->
 
 See also:
 
