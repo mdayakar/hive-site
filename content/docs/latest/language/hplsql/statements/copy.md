@@ -71,5 +71,4 @@ COPY sales.users TO sales.users2 AT tdconn;
 <!-- **Version:** HPL/SQL 0.3.7 -->
 
 See also:
-- [COPY FROM LOCAL]({{< ref "copy-from-local" >}})
 - [INSERT DIRECTORY]({{< ref "insert-directory" >}})

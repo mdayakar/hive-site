@@ -40,4 +40,3 @@ insert overwrite directory '/data/sales_' || current_date
 
 See also:
 - [COPY]({{< ref "copy" >}})
-- [COPY FROM LOCAL]({{< ref "copy-from-local" >}})
