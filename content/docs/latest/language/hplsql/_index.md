@@ -75,7 +75,6 @@ Initially it was provided as a stand alone command line tool. As a part of ([HIV
 | [CALL]({{< ref "call" >}}) | Execute a stored procedure |
 | [CLOSE]({{< ref "close" >}}) | Close a cursor |
 | [CMP]({{< ref "cmp" >}}) | Compare data in tables |
-| [COPY]({{< ref "copy" >}}) | Copy data between tables and files |
 | [CREATE DATABASE]({{< ref "create-database" >}}) | Create a database |
 | [CREATE FUNCTION]({{< ref "create-function" >}}) | Create a user-defined SQL function |
 | [CREATE LOCAL TEMPORARY TABLE]({{< ref "create-local-temporary-table" >}}) | Create a session-level temporary table |
